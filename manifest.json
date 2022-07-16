@@ -1,0 +1,27 @@
+{
+ "name": "fgslytics",
+  "description": "FGSlytics",
+  "version": "1.1",
+  "content_scripts": [{
+        "run_at": "document_end",
+        "matches": [
+            "https://*/*",
+            "http://*/*"
+        ],
+        "js": ["content-script.js"]
+    }],
+	 "background": {
+        "scripts":["background.js"]
+    },
+  "permissions": [],
+  "host_permissions": ["activeTab"],
+  "action": {
+    "default_title": "FGSlytics",
+    "default_icon": "icon.png",
+  },
+  "web_accessible_resources": [
+        "popup.html",
+        "popup.js"
+    ]
+  "manifest_version": 3
+}
