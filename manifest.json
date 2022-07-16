@@ -22,6 +22,6 @@
   "web_accessible_resources": [
         "popup.html",
         "popup.js"
-    ]
+    ],
   "manifest_version": 3
 }
